@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+# ===========================
+# クライアントサーバー
+# ===========================
+  CLIENT:
+    image: node:latest
+    tty: true
+    volumes:
+      - ../Client:/client
+    ports:
+      - 4500:3000
