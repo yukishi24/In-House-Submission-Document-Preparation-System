@@ -4,9 +4,9 @@ services:
 # クライアントサーバー
 # ===========================
   CLIENT:
-    image: node:latest
+    image: node:21
     tty: true
     volumes:
       - ../Client:/client
     ports:
-      - 4500:3000
+      - 4500:5173
